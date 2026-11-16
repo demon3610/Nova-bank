@@ -1,0 +1,17 @@
+[
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-admin",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "curl/8.22.0",
+    "severity": "low",
+    "timestamp": "2026-11-16T17:52:36.067Z",
+    "id": "f7cd0764-8758-4c1c-a638-c51873af7cf4",
+    "createdAt": "2026-11-16T17:52:36.068Z",
+    "updatedAt": "2026-11-16T17:52:36.068Z"
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e-1",
+    "userId": "u-emp",
+    "employeeId": "EMP001",
+    "department": "Operations",
+    "designation": "Senior Officer",
+    "role": "role-employee",
+    "permissions": [],
+    "isActive": true,
+    "joinedAt": "2023-06-01",
+    "createdAt": "2026-11-16T17:50:42.268Z",
+    "updatedAt": "2026-11-16T17:50:42.268Z"
+  },
+  {
+    "id": "e-2",
+    "userId": "u-admin",
+    "employeeId": "ADM001",
+    "department": "Administration",
+    "designation": "System Admin",
+    "role": "role-admin",
+    "permissions": [],
+    "isActive": true,
+    "joinedAt": "2022-01-15",
+    "createdAt": "2026-11-16T17:50:42.269Z",
+    "updatedAt": "2026-11-16T17:50:42.269Z"
+  }
+]

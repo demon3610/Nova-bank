@@ -1,0 +1,91 @@
+[
+  {
+    "id": "u-admin",
+    "email": "admin@novabank.com",
+    "phone": "+1-555-0100",
+    "password": "$2a$12$k6sSH5m10QawqorAxLj.QuAHenAaNQt4dJ2rGzGRFCQiYJdwbAEMC",
+    "firstName": "Raj",
+    "lastName": "Admin",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-admin"
+    ],
+    "createdAt": "2026-11-16T17:50:42.267Z",
+    "updatedAt": "2026-11-16T17:52:36.056Z",
+    "lockUntil": null,
+    "lastLoginAt": "2026-11-16T17:52:36.056Z"
+  },
+  {
+    "id": "u-emp",
+    "email": "employee@novabank.com",
+    "phone": "+1-555-0101",
+    "password": "$2a$12$k6sSH5m10QawqorAxLj.QuAHenAaNQt4dJ2rGzGRFCQiYJdwbAEMC",
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-employee"
+    ],
+    "createdAt": "2026-11-16T17:50:42.267Z",
+    "updatedAt": "2026-11-16T17:50:42.267Z"
+  },
+  {
+    "id": "u-cust1",
+    "email": "john.doe@email.com",
+    "phone": "+1-555-1001",
+    "password": "$2a$12$k6sSH5m10QawqorAxLj.QuAHenAaNQt4dJ2rGzGRFCQiYJdwbAEMC",
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123 Main St, New York, NY",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-11-16T17:50:42.268Z",
+    "updatedAt": "2026-11-16T17:50:42.268Z"
+  },
+  {
+    "id": "u-cust2",
+    "email": "jane.smith@email.com",
+    "phone": "+1-555-1002",
+    "password": "$2a$12$k6sSH5m10QawqorAxLj.QuAHenAaNQt4dJ2rGzGRFCQiYJdwbAEMC",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "address": "456 Oak Ave, Los Angeles, CA",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-11-16T17:50:42.268Z",
+    "updatedAt": "2026-11-16T17:50:42.268Z"
+  },
+  {
+    "id": "u-cust3",
+    "email": "bob.wilson@email.com",
+    "phone": "+1-555-1003",
+    "password": "$2a$12$k6sSH5m10QawqorAxLj.QuAHenAaNQt4dJ2rGzGRFCQiYJdwbAEMC",
+    "firstName": "Bob",
+    "lastName": "Wilson",
+    "kycStatus": "pending",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-11-16T17:50:42.268Z",
+    "updatedAt": "2026-11-16T17:50:42.268Z"
+  }
+]

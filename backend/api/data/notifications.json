@@ -1,0 +1,42 @@
+[
+  {
+    "id": "notif-1",
+    "userId": "u-cust1",
+    "type": "transaction",
+    "title": "Payment Received",
+    "message": "You received $2,500 from Employer Inc.",
+    "isRead": false,
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  },
+  {
+    "id": "notif-2",
+    "userId": "u-cust1",
+    "type": "security",
+    "title": "Login Alert",
+    "message": "New login from Chrome on Windows",
+    "isRead": false,
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  },
+  {
+    "id": "notif-3",
+    "userId": "u-cust1",
+    "type": "account",
+    "title": "Statement Ready",
+    "message": "Your monthly statement is now available",
+    "isRead": true,
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  },
+  {
+    "id": "notif-4",
+    "userId": "u-cust1",
+    "type": "system",
+    "title": "App Update",
+    "message": "New features available in latest update",
+    "isRead": true,
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  }
+]

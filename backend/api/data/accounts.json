@@ -1,0 +1,72 @@
+[
+  {
+    "id": "a-1",
+    "accountNumber": "1000010001",
+    "userId": "u-cust1",
+    "type": "savings",
+    "balance": 52450.75,
+    "currency": "USD",
+    "status": "active",
+    "branchCode": "BR001",
+    "ifscCode": "NOVA0000001",
+    "openedAt": "2024-01-15T08:00:00Z",
+    "createdAt": "2026-11-16T17:50:42.269Z",
+    "updatedAt": "2026-11-16T17:50:42.269Z"
+  },
+  {
+    "id": "a-2",
+    "accountNumber": "1000010002",
+    "userId": "u-cust1",
+    "type": "current",
+    "balance": 32300,
+    "currency": "USD",
+    "status": "active",
+    "branchCode": "BR001",
+    "ifscCode": "NOVA0000002",
+    "openedAt": "2024-01-15T08:00:00Z",
+    "createdAt": "2026-11-16T17:50:42.269Z",
+    "updatedAt": "2026-11-16T17:50:42.269Z"
+  },
+  {
+    "id": "a-3",
+    "accountNumber": "1000010003",
+    "userId": "u-cust2",
+    "type": "savings",
+    "balance": 87500,
+    "currency": "USD",
+    "status": "active",
+    "branchCode": "BR002",
+    "ifscCode": "NOVA0000003",
+    "openedAt": "2024-02-20T10:30:00Z",
+    "createdAt": "2026-11-16T17:50:42.270Z",
+    "updatedAt": "2026-11-16T17:50:42.270Z"
+  },
+  {
+    "id": "a-4",
+    "accountNumber": "1000010004",
+    "userId": "u-cust2",
+    "type": "current",
+    "balance": 12500,
+    "currency": "USD",
+    "status": "frozen",
+    "branchCode": "BR002",
+    "ifscCode": "NOVA0000004",
+    "openedAt": "2024-03-01T09:00:00Z",
+    "createdAt": "2026-11-16T17:50:42.270Z",
+    "updatedAt": "2026-11-16T17:50:42.270Z"
+  },
+  {
+    "id": "a-5",
+    "accountNumber": "1000010005",
+    "userId": "u-cust3",
+    "type": "savings",
+    "balance": 1500,
+    "currency": "USD",
+    "status": "active",
+    "branchCode": "BR001",
+    "ifscCode": "NOVA0000005",
+    "openedAt": "2024-03-10T14:00:00Z",
+    "createdAt": "2026-11-16T17:50:42.270Z",
+    "updatedAt": "2026-11-16T17:50:42.270Z"
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "role-admin",
+    "name": "admin",
+    "description": "System administrator",
+    "permissions": [
+      "*"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T17:50:42.263Z",
+    "updatedAt": "2026-11-16T17:50:42.263Z"
+  },
+  {
+    "id": "role-employee",
+    "name": "employee",
+    "description": "Bank employee",
+    "permissions": [
+      "customers:read",
+      "customers:write",
+      "transactions:read",
+      "transactions:review",
+      "cards:manage",
+      "kyc:review"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T17:50:42.263Z",
+    "updatedAt": "2026-11-16T17:50:42.263Z"
+  },
+  {
+    "id": "role-user",
+    "name": "user",
+    "description": "Bank customer",
+    "permissions": [
+      "accounts:read",
+      "accounts:write",
+      "transactions:create",
+      "transactions:read",
+      "cards:read",
+      "cards:manage",
+      "beneficiaries:manage"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T17:50:42.267Z",
+    "updatedAt": "2026-11-16T17:50:42.267Z"
+  }
+]

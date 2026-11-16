@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ben-1",
+    "userId": "u-cust1",
+    "accountNumber": "1000020001",
+    "ifscCode": "HDFC0001234",
+    "name": "Alice Johnson",
+    "nickname": "Alice",
+    "bankName": "HDFC Bank",
+    "transferLimit": 10000,
+    "isVerified": true,
+    "status": "active",
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  },
+  {
+    "id": "ben-2",
+    "userId": "u-cust1",
+    "accountNumber": "1000020002",
+    "ifscCode": "ICIC0005678",
+    "name": "Mike Chen",
+    "nickname": "Mike",
+    "bankName": "ICICI Bank",
+    "transferLimit": 5000,
+    "isVerified": true,
+    "status": "active",
+    "createdAt": "2026-11-16T17:50:42.276Z",
+    "updatedAt": "2026-11-16T17:50:42.276Z"
+  }
+]

@@ -1,17 +1,13 @@
-import moduleAlias from 'module-alias';
-
-// Dynamically bind '@' alias to the active source directory (src in dev, dist in production)
-(moduleAlias as any).addAlias('@', __dirname);
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import { config } from '@/config';
-import { connectDatabase } from '@/config/database';
-import { logger } from '@/config/logger';
-import { generalLimiter } from '@/middlewares/rateLimiter';
-import { errorHandler } from '@/middlewares/errorHandler';
-import routes from '@/routes';
-import { usersDb, accountsDb, transactionsDb } from '@/database';
+import { config } from './config';
+import { connectDatabase } from './config/database';
+import { logger } from './config/logger';
+import { generalLimiter } from './middlewares/rateLimiter';
+import { errorHandler } from './middlewares/errorHandler';
+import routes from './routes';
+import { usersDb, accountsDb, transactionsDb } from './database';
 
 const app = express();
 

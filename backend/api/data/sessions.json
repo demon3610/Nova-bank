@@ -1,0 +1,14 @@
+[
+  {
+    "userId": "u-admin",
+    "token": "d5f38bf07e2a9c2f658f55dd9de564253a9cc49d93f78d2d2f1ea1f8663e24d0",
+    "refreshToken": "9be611a2bdf192c4c45e7941c629d6faee5d144446d2c25d1c15a76924ad2bee",
+    "ipAddress": "::1",
+    "userAgent": "curl/8.22.0",
+    "isValid": true,
+    "expiresAt": "2026-11-17T17:52:36.065Z",
+    "id": "208bf840-2c12-4cc9-8e18-fdc3e2c6b79f",
+    "createdAt": "2026-11-16T17:52:36.066Z",
+    "updatedAt": "2026-11-16T17:52:36.066Z"
+  }
+]

@@ -15,9 +15,17 @@ import { usersDb, accountsDb, transactionsDb } from '@/database';
 
 const app = express();
 
-const corsOrigins = process.env.CORS_ORIGIN || (process.env.NODE_ENV === 'production' ? 'https://novabank.example.com' : '*');
+const corsOriginsEnv = process.env.CORS_ORIGIN || 'http://localhost:5173,http://localhost:5174,https://frontend-taupe-chi-53.vercel.app';
+const allowedOrigins = corsOriginsEnv.split(',').map((o) => o.trim());
+
 app.use(cors({
-  origin: corsOrigins,
+  origin: (origin, callback) => {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes('*') || allowedOrigins.includes(origin) || origin.endsWith('.vercel.app') || origin.startsWith('http://localhost:')) {
+      return callback(null, true);
+    }
+    return callback(null, true);
+  },
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Device-Id', 'X-Request-Id'],
   credentials: true,
@@ -62,6 +70,18 @@ if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test') {
   });
 }
 
+app.get('/', (_req, res) => {
+  res.json({
+    success: true,
+    message: 'NovaBank API is running',
+    version: '1.0.0',
+    endpoints: {
+      health: '/health',
+      api: '/api',
+    },
+  });
+});
+
 app.get('/health', (_req, res) => {
   res.json({
     success: true,
@@ -78,6 +98,11 @@ app.get('/health', (_req, res) => {
 app.use('/api', routes);
 
 app.use(errorHandler);
+
+// Eager database initialization
+connectDatabase().catch((err) => {
+  logger.error('Failed to initialize database:', err);
+});
 
 let server: ReturnType<typeof app.listen>;
 
@@ -117,7 +142,7 @@ process.on('unhandledRejection', (reason) => {
   logger.error('Unhandled rejection:', reason);
 });
 
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
   start();
 }
 

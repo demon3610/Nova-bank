@@ -12,7 +12,11 @@ export default defineConfig({
         host: '0.0.0.0',
         port: 5173,
         proxy: {
-            '/api': { target: 'http://localhost:4000', changeOrigin: true },
+            '/api': {
+                target: process.env.VITE_BACKEND_URL || 'https://nova-bank-src.vercel.app',
+                changeOrigin: true,
+                secure: false,
+            },
         },
     },
 });

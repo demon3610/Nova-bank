@@ -2,7 +2,10 @@ import fs from 'fs';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
-const DATA_DIR = path.resolve(__dirname, '../../src/database/data');
+const DEFAULT_DATA_DIR = path.resolve(__dirname, '../../src/database/data');
+const DATA_DIR = (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME)
+  ? path.join('/tmp', 'novabank_data')
+  : DEFAULT_DATA_DIR;
 
 export type Document = Record<string, any> & { id: string; createdAt: string; updatedAt: string };
 
@@ -30,17 +33,39 @@ export class JsonDatabase<T extends Document> {
   }
 
   private ensureFile(): void {
-    if (!fs.existsSync(DATA_DIR)) {
-      fs.mkdirSync(DATA_DIR, { recursive: true });
-    }
-    if (!fs.existsSync(this.filePath)) {
-      fs.writeFileSync(this.filePath, '[]', 'utf-8');
+    try {
+      if (!fs.existsSync(DATA_DIR)) {
+        fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      if (!fs.existsSync(this.filePath)) {
+        const fallbackPath = path.join(DEFAULT_DATA_DIR, path.basename(this.filePath));
+        if (fs.existsSync(fallbackPath)) {
+          const content = fs.readFileSync(fallbackPath, 'utf-8');
+          fs.writeFileSync(this.filePath, content, 'utf-8');
+        } else {
+          fs.writeFileSync(this.filePath, '[]', 'utf-8');
+        }
+      }
+    } catch {
+      // In read-only environments, persist in memory
     }
   }
 
   private read(): T[] {
     if (this.cache) return this.cache;
-    const raw = fs.readFileSync(this.filePath, 'utf-8');
+    let raw = '[]';
+    try {
+      if (fs.existsSync(this.filePath)) {
+        raw = fs.readFileSync(this.filePath, 'utf-8');
+      } else {
+        const fallbackPath = path.join(DEFAULT_DATA_DIR, path.basename(this.filePath));
+        if (fs.existsSync(fallbackPath)) {
+          raw = fs.readFileSync(fallbackPath, 'utf-8');
+        }
+      }
+    } catch {
+      raw = '[]';
+    }
     try {
       this.cache = JSON.parse(raw);
       return this.cache!;
@@ -52,7 +77,11 @@ export class JsonDatabase<T extends Document> {
 
   private write(data: T[]): void {
     this.cache = data;
-    fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2), 'utf-8');
+    try {
+      fs.writeFileSync(this.filePath, JSON.stringify(data, null, 2), 'utf-8');
+    } catch {
+      // In read-only environments, state is preserved in memory cache
+    }
   }
 
   private now(): string {

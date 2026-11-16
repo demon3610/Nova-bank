@@ -2,7 +2,13 @@ import fs from 'fs';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 
-const DEFAULT_DATA_DIR = path.resolve(__dirname, '../../src/database/data');
+const candidateDirs = [
+  path.join(__dirname, 'data'),
+  path.resolve(__dirname, '../../src/database/data'),
+  path.resolve(__dirname, '../database/data'),
+  path.resolve(__dirname, 'database/data'),
+];
+const DEFAULT_DATA_DIR = candidateDirs.find((d) => fs.existsSync(d)) || path.join(__dirname, 'data');
 const DATA_DIR = (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME)
   ? path.join('/tmp', 'novabank_data')
   : DEFAULT_DATA_DIR;

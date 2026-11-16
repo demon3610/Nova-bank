@@ -148,3 +148,11 @@ if (process.env.NODE_ENV !== 'test' && !process.env.VERCEL) {
 
 export { app, start };
 export default app;
+// Support CommonJS export for serverless runtimes
+// @ts-ignore
+if (typeof module !== 'undefined' && module.exports) {
+  // @ts-ignore
+  module.exports = app;
+  // @ts-ignore
+  module.exports.default = app;
+}

@@ -1,4 +1,7 @@
-export const API_BASE_URL = (import.meta.env.VITE_API_URL as string) || '/api';
+const rawApiUrl = ((import.meta.env.VITE_API_URL as string) || '').trim();
+export const API_BASE_URL = rawApiUrl
+  ? (rawApiUrl.endsWith('/api') ? rawApiUrl : `${rawApiUrl.replace(/\/+$/, '')}/api`)
+  : '/api';
 
 export const TRANSACTION_TYPES = [
   'transfer',

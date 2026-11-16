@@ -43,7 +43,7 @@ export function errorHandler(err: Error, req: Request, res: Response, _next: Nex
       message: err.message,
       data: null,
       errors: [err.code],
-      stack: err.stack,
+      ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
     };
     res.status(err.statusCode).json(response);
     return;
@@ -99,10 +99,10 @@ export function errorHandler(err: Error, req: Request, res: Response, _next: Nex
 
   const response: ErrorResponse = {
     success: false,
-    message: err.message,
+    message: process.env.NODE_ENV === 'production' ? 'An internal error occurred. Please try again later.' : err.message,
     data: null,
     errors: ['INTERNAL_SERVER_ERROR'],
-    stack: err.stack,
+    ...(process.env.NODE_ENV === 'development' && { stack: err.stack }),
   };
   res.status(500).json(response);
 }

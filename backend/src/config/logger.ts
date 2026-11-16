@@ -2,7 +2,9 @@ import winston from 'winston';
 import path from 'path';
 import { config } from './index';
 
-const logDir = path.resolve(__dirname, '../../logs');
+const logDir = (process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME)
+  ? path.join('/tmp', 'logs')
+  : path.resolve(__dirname, '../../logs');
 
 const enumerateErrorFormat = winston.format((info) => {
   if (info instanceof Error) {
@@ -47,7 +49,7 @@ const fileTransports: winston.transport[] = [
 
 const transports: winston.transport[] = [consoleTransport];
 
-if (config.env === 'production') {
+if (config.env === 'production' && !process.env.VERCEL && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
   transports.push(...fileTransports);
 }
 

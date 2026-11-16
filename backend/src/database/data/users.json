@@ -1,0 +1,279 @@
+[
+  {
+    "id": "u-admin",
+    "email": "admin@novabank.com",
+    "phone": "+1-555-0100",
+    "password": "$2a$12$0qJs1DzRKPeuke619Bp2Iu6Jwrl0IE6PX.0eKj9rrlunBN4Thg3ae",
+    "firstName": "Raj",
+    "lastName": "Admin",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-admin"
+    ],
+    "createdAt": "2026-07-31T15:50:18.666Z",
+    "updatedAt": "2026-07-31T15:50:18.666Z"
+  },
+  {
+    "id": "u-emp",
+    "email": "employee@novabank.com",
+    "phone": "+1-555-0101",
+    "password": "$2a$12$0qJs1DzRKPeuke619Bp2Iu6Jwrl0IE6PX.0eKj9rrlunBN4Thg3ae",
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-employee"
+    ],
+    "createdAt": "2026-07-31T15:50:18.666Z",
+    "updatedAt": "2026-07-31T15:50:18.666Z"
+  },
+  {
+    "id": "u-cust1",
+    "email": "john.doe@email.com",
+    "phone": "+1-555-1001",
+    "password": "$2a$12$0qJs1DzRKPeuke619Bp2Iu6Jwrl0IE6PX.0eKj9rrlunBN4Thg3ae",
+    "firstName": "John",
+    "lastName": "Doe",
+    "address": "123 Main St, New York, NY",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-07-31T15:50:18.667Z",
+    "updatedAt": "2026-07-31T15:50:18.667Z"
+  },
+  {
+    "id": "u-cust2",
+    "email": "jane.smith@email.com",
+    "phone": "+1-555-1002",
+    "password": "$2a$12$0qJs1DzRKPeuke619Bp2Iu6Jwrl0IE6PX.0eKj9rrlunBN4Thg3ae",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "address": "456 Oak Ave, Los Angeles, CA",
+    "kycStatus": "verified",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-07-31T15:50:18.667Z",
+    "updatedAt": "2026-07-31T15:50:18.667Z"
+  },
+  {
+    "id": "u-cust3",
+    "email": "bob.wilson@email.com",
+    "phone": "+1-555-1003",
+    "password": "$2a$12$0qJs1DzRKPeuke619Bp2Iu6Jwrl0IE6PX.0eKj9rrlunBN4Thg3ae",
+    "firstName": "Bob",
+    "lastName": "Wilson",
+    "kycStatus": "pending",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 0,
+    "roles": [
+      "role-user"
+    ],
+    "createdAt": "2026-07-31T15:50:18.667Z",
+    "updatedAt": "2026-07-31T15:50:18.667Z"
+  },
+  {
+    "email": "asd@gmail.com",
+    "phone": "7410258963",
+    "password": "$2a$12$Qz9kNyl98ajYDGhJGh1ue.qW22ABpZuAcX90bAbsnRQOaUTdTu6nW",
+    "firstName": "asd",
+    "lastName": "asd",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "postalCode": "",
+      "country": ""
+    },
+    "kycStatus": "pending",
+    "isActive": true,
+    "isLocked": false,
+    "failedLoginAttempts": 1,
+    "roles": [
+      "role-user"
+    ],
+    "id": "7ff3cf01-ae56-4e63-ae2a-8e419ee7285c",
+    "createdAt": "2026-07-31T15:57:45.817Z",
+    "updatedAt": "2026-08-10T08:41:13.907Z"
+  },
+  {
+    "id": "u-ceo",
+    "email": "ceo@novabank.com",
+    "phone": "+1-555-0999",
+    "password": "$2a$10$vsAK2zBu/qUlDWEk69tvC.zQnWdZFOaPDZsYdQZ0wfwmJ.alTdonC",
+    "firstName": "Victor",
+    "lastName": "Vance",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 1000000,
+    "isActive": true,
+    "isLocked": false,
+    "preferences": {
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "sms": true
+      }
+    },
+    "createdAt": "2026-11-16T16:56:11.607Z",
+    "updatedAt": "2026-11-16T16:56:11.607Z"
+  },
+  {
+    "id": "u-admin",
+    "email": "admin@novabank.com",
+    "phone": "+1-555-0100",
+    "password": "$2a$10$vsAK2zBu/qUlDWEk69tvC.zQnWdZFOaPDZsYdQZ0wfwmJ.alTdonC",
+    "firstName": "Marcus",
+    "lastName": "Admin",
+    "role": "admin",
+    "roles": [
+      "role-admin"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 500000,
+    "isActive": true,
+    "isLocked": false,
+    "createdAt": "2026-11-16T16:56:11.607Z",
+    "updatedAt": "2026-11-16T16:56:11.607Z"
+  },
+  {
+    "id": "u-cust1",
+    "email": "john.doe@email.com",
+    "phone": "+1-555-1001",
+    "password": "$2a$10$vsAK2zBu/qUlDWEk69tvC.zQnWdZFOaPDZsYdQZ0wfwmJ.alTdonC",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 5000,
+    "isActive": true,
+    "isLocked": false,
+    "preferences": {
+      "theme": "light",
+      "language": "en"
+    },
+    "createdAt": "2026-11-16T16:56:11.607Z",
+    "updatedAt": "2026-11-16T16:56:11.607Z"
+  },
+  {
+    "id": "u-cust2",
+    "email": "jane.smith@email.com",
+    "phone": "+1-555-1002",
+    "password": "$2a$10$vsAK2zBu/qUlDWEk69tvC.zQnWdZFOaPDZsYdQZ0wfwmJ.alTdonC",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 25000,
+    "isActive": true,
+    "isLocked": false,
+    "createdAt": "2026-11-16T16:56:11.608Z",
+    "updatedAt": "2026-11-16T16:56:11.608Z"
+  },
+  {
+    "id": "u-ceo",
+    "email": "ceo@novabank.com",
+    "phone": "+1-555-0999",
+    "password": "$2a$10$/bCB68tYUkfDuGFKV1IiTOVbrY7Id8FzhltsTButcAhDEPbe62GQO",
+    "firstName": "Victor",
+    "lastName": "Vance",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 1000000,
+    "isActive": true,
+    "isLocked": false,
+    "preferences": {
+      "theme": "dark",
+      "notifications": {
+        "email": true,
+        "sms": true
+      }
+    },
+    "createdAt": "2026-11-16T16:56:25.417Z",
+    "updatedAt": "2026-11-16T16:56:25.417Z"
+  },
+  {
+    "id": "u-admin",
+    "email": "admin@novabank.com",
+    "phone": "+1-555-0100",
+    "password": "$2a$10$/bCB68tYUkfDuGFKV1IiTOVbrY7Id8FzhltsTButcAhDEPbe62GQO",
+    "firstName": "Marcus",
+    "lastName": "Admin",
+    "role": "admin",
+    "roles": [
+      "role-admin"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 500000,
+    "isActive": true,
+    "isLocked": false,
+    "createdAt": "2026-11-16T16:56:25.417Z",
+    "updatedAt": "2026-11-16T16:56:25.417Z"
+  },
+  {
+    "id": "u-cust1",
+    "email": "john.doe@email.com",
+    "phone": "+1-555-1001",
+    "password": "$2a$10$/bCB68tYUkfDuGFKV1IiTOVbrY7Id8FzhltsTButcAhDEPbe62GQO",
+    "firstName": "John",
+    "lastName": "Doe",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 5000,
+    "isActive": true,
+    "isLocked": false,
+    "preferences": {
+      "theme": "light",
+      "language": "en"
+    },
+    "createdAt": "2026-11-16T16:56:25.418Z",
+    "updatedAt": "2026-11-16T16:56:25.418Z"
+  },
+  {
+    "id": "u-cust2",
+    "email": "jane.smith@email.com",
+    "phone": "+1-555-1002",
+    "password": "$2a$10$/bCB68tYUkfDuGFKV1IiTOVbrY7Id8FzhltsTButcAhDEPbe62GQO",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "role": "user",
+    "roles": [
+      "role-user"
+    ],
+    "kycStatus": "verified",
+    "creditLimit": 25000,
+    "isActive": true,
+    "isLocked": false,
+    "createdAt": "2026-11-16T16:56:25.418Z",
+    "updatedAt": "2026-11-16T16:56:25.418Z"
+  }
+]

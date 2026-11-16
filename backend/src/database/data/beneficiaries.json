@@ -1,0 +1,80 @@
+[
+  {
+    "userId": "u-user",
+    "accountNumber": "1234567890",
+    "ifscCode": "HDFC0001234",
+    "name": "Test Beneficiary",
+    "nickname": "Test",
+    "bankName": "HDFC Bank",
+    "transferLimit": 0,
+    "isVerified": false,
+    "status": "active",
+    "id": "beab4304-0845-4045-bbb6-fff5a14768ce",
+    "createdAt": "2026-07-06T09:46:48.147Z",
+    "updatedAt": "2026-07-06T09:46:48.147Z"
+  },
+  {
+    "userId": "5f218916-c421-4611-8ab3-60b646a00a8a",
+    "accountNumber": "741058963",
+    "ifscCode": "AQW12345",
+    "name": "wqe",
+    "nickname": "q",
+    "bankName": "AQW",
+    "transferLimit": 0,
+    "isVerified": false,
+    "status": "active",
+    "id": "41bbadcd-f667-47f6-b244-1ccc4faad274",
+    "createdAt": "2026-07-06T09:52:55.664Z",
+    "updatedAt": "2026-07-06T09:53:21.352Z"
+  },
+  {
+    "id": "ben-1",
+    "userId": "u-cust1",
+    "accountNumber": "1000020001",
+    "ifscCode": "HDFC0001234",
+    "name": "Alice Johnson",
+    "nickname": "Alice",
+    "bankName": "HDFC Bank",
+    "transferLimit": 10000,
+    "isVerified": true,
+    "status": "active",
+    "createdAt": "2026-07-31T15:50:18.683Z",
+    "updatedAt": "2026-07-31T15:50:18.683Z"
+  },
+  {
+    "id": "ben-2",
+    "userId": "u-cust1",
+    "accountNumber": "1000020002",
+    "ifscCode": "ICIC0005678",
+    "name": "Mike Chen",
+    "nickname": "Mike",
+    "bankName": "ICICI Bank",
+    "transferLimit": 5000,
+    "isVerified": true,
+    "status": "active",
+    "createdAt": "2026-07-31T15:50:18.683Z",
+    "updatedAt": "2026-07-31T15:50:18.683Z"
+  },
+  {
+    "id": "ben-cust1-1",
+    "userId": "u-cust1",
+    "name": "Offshore Holding LLC",
+    "accountNumber": "8800991122",
+    "bankName": "Cayman Global Bank",
+    "routingNumber": "021000021",
+    "status": "pending",
+    "createdAt": "2026-11-16T16:56:11.610Z",
+    "updatedAt": "2026-11-16T16:56:11.610Z"
+  },
+  {
+    "id": "ben-cust1-1",
+    "userId": "u-cust1",
+    "name": "Offshore Holding LLC",
+    "accountNumber": "8800991122",
+    "bankName": "Cayman Global Bank",
+    "routingNumber": "021000021",
+    "status": "pending",
+    "createdAt": "2026-11-16T16:56:25.419Z",
+    "updatedAt": "2026-11-16T16:56:25.419Z"
+  }
+]

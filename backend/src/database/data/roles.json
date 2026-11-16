@@ -1,0 +1,166 @@
+[
+  {
+    "id": "role-admin",
+    "name": "admin",
+    "description": "System administrator",
+    "permissions": [
+      "*"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-06-22T11:20:30.273Z",
+    "updatedAt": "2026-06-22T11:20:30.273Z"
+  },
+  {
+    "id": "role-employee",
+    "name": "employee",
+    "description": "Bank employee",
+    "permissions": [
+      "customers:read",
+      "customers:write",
+      "transactions:read",
+      "transactions:review",
+      "cards:manage",
+      "kyc:review"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-06-22T11:20:30.274Z",
+    "updatedAt": "2026-06-22T11:20:30.274Z"
+  },
+  {
+    "id": "role-user",
+    "name": "user",
+    "description": "Bank customer",
+    "permissions": [
+      "accounts:read",
+      "accounts:write",
+      "transactions:create",
+      "transactions:read",
+      "cards:read",
+      "cards:manage",
+      "beneficiaries:manage"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-06-22T11:20:30.274Z",
+    "updatedAt": "2026-06-22T11:20:30.274Z"
+  },
+  {
+    "id": "role-admin",
+    "name": "admin",
+    "description": "System administrator",
+    "permissions": [
+      "*"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-07-31T15:50:18.665Z",
+    "updatedAt": "2026-07-31T15:50:18.665Z"
+  },
+  {
+    "id": "role-employee",
+    "name": "employee",
+    "description": "Bank employee",
+    "permissions": [
+      "customers:read",
+      "customers:write",
+      "transactions:read",
+      "transactions:review",
+      "cards:manage",
+      "kyc:review"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-07-31T15:50:18.665Z",
+    "updatedAt": "2026-07-31T15:50:18.665Z"
+  },
+  {
+    "id": "role-user",
+    "name": "user",
+    "description": "Bank customer",
+    "permissions": [
+      "accounts:read",
+      "accounts:write",
+      "transactions:create",
+      "transactions:read",
+      "cards:read",
+      "cards:manage",
+      "beneficiaries:manage"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-07-31T15:50:18.666Z",
+    "updatedAt": "2026-07-31T15:50:18.666Z"
+  },
+  {
+    "id": "role-admin",
+    "name": "admin",
+    "description": "System Administrator",
+    "permissions": [
+      "*"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:11.602Z",
+    "updatedAt": "2026-11-16T16:56:11.602Z"
+  },
+  {
+    "id": "role-employee",
+    "name": "employee",
+    "description": "Bank Employee",
+    "permissions": [
+      "customers:read",
+      "customers:write",
+      "kyc:review",
+      "transactions:review"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:11.603Z",
+    "updatedAt": "2026-11-16T16:56:11.603Z"
+  },
+  {
+    "id": "role-user",
+    "name": "user",
+    "description": "Bank Customer",
+    "permissions": [
+      "accounts:read",
+      "transactions:create",
+      "cards:read"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:11.606Z",
+    "updatedAt": "2026-11-16T16:56:11.606Z"
+  },
+  {
+    "id": "role-admin",
+    "name": "admin",
+    "description": "System Administrator",
+    "permissions": [
+      "*"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:25.413Z",
+    "updatedAt": "2026-11-16T16:56:25.413Z"
+  },
+  {
+    "id": "role-employee",
+    "name": "employee",
+    "description": "Bank Employee",
+    "permissions": [
+      "customers:read",
+      "customers:write",
+      "kyc:review",
+      "transactions:review"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:25.413Z",
+    "updatedAt": "2026-11-16T16:56:25.413Z"
+  },
+  {
+    "id": "role-user",
+    "name": "user",
+    "description": "Bank Customer",
+    "permissions": [
+      "accounts:read",
+      "transactions:create",
+      "cards:read"
+    ],
+    "isSystem": true,
+    "createdAt": "2026-11-16T16:56:25.417Z",
+    "updatedAt": "2026-11-16T16:56:25.417Z"
+  }
+]

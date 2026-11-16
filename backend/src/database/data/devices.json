@@ -1,0 +1,28 @@
+[
+  {
+    "id": "dvc-1",
+    "userId": "u-cust1",
+    "deviceName": "iPhone 15 Pro",
+    "deviceType": "mobile",
+    "os": "iOS 18",
+    "browser": "Safari",
+    "ipAddress": "192.168.1.100",
+    "isTrusted": true,
+    "lastUsedAt": "2026-07-31T15:50:16.497Z",
+    "createdAt": "2026-07-31T15:50:18.681Z",
+    "updatedAt": "2026-07-31T15:50:18.681Z"
+  },
+  {
+    "id": "dvc-2",
+    "userId": "u-cust1",
+    "deviceName": "MacBook Pro",
+    "deviceType": "laptop",
+    "os": "macOS 15",
+    "browser": "Chrome",
+    "ipAddress": "192.168.1.101",
+    "isTrusted": true,
+    "lastUsedAt": "2026-07-30T15:50:18.681Z",
+    "createdAt": "2026-07-31T15:50:18.681Z",
+    "updatedAt": "2026-07-31T15:50:18.681Z"
+  }
+]

@@ -1,0 +1,432 @@
+[
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "registration",
+    "resource": "User",
+    "resourceId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "details": {
+      "type": "account_created_on_register",
+      "accountNumber": "NBMR8V9CO4ZB4K8612"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T06:56:07.013Z",
+    "id": "abbafcf1-d0cc-45b0-8f07-7d2b5da4731a",
+    "createdAt": "2026-07-06T06:56:07.013Z",
+    "updatedAt": "2026-07-06T06:56:07.013Z"
+  },
+  {
+    "actorId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "618ae14c-4c22-4945-824c-ffa223086208",
+    "details": {
+      "type": "deposit",
+      "amount": 500
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T06:57:26.349Z",
+    "id": "fdc94842-5f3e-4e56-be6d-2a24df95cfe5",
+    "createdAt": "2026-07-06T06:57:26.349Z",
+    "updatedAt": "2026-07-06T06:57:26.349Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T07:07:22.014Z",
+    "id": "0abf50eb-24c1-4ebc-96c2-de0740c6554c",
+    "createdAt": "2026-07-06T07:07:22.014Z",
+    "updatedAt": "2026-07-06T07:07:22.015Z"
+  },
+  {
+    "actorId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "actorType": "user",
+    "action": "transfer",
+    "resource": "Transaction",
+    "resourceId": "f4f79d80-02b8-47c2-8889-4f52d51a4dc8",
+    "details": {
+      "amount": 150,
+      "fromAccount": "a-registered-savings",
+      "toAccount": "1000010003"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "medium",
+    "timestamp": "2026-07-06T07:07:49.547Z",
+    "id": "9afc2a4d-adeb-4ded-ac0e-8dfd44d4332a",
+    "createdAt": "2026-07-06T07:07:49.547Z",
+    "updatedAt": "2026-07-06T07:07:49.547Z"
+  },
+  {
+    "actorId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "a-registered-savings",
+    "details": {
+      "type": "deposit",
+      "amount": 50
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T07:17:58.965Z",
+    "id": "96dc067c-71a3-4d42-a040-b95cfece9c1f",
+    "createdAt": "2026-07-06T07:17:58.965Z",
+    "updatedAt": "2026-07-06T07:17:58.965Z"
+  },
+  {
+    "actorId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "actorType": "user",
+    "action": "transfer",
+    "resource": "Account",
+    "resourceId": "d6b9ec86-ddaf-475b-8546-c7a29fe1a5b9",
+    "details": {
+      "type": "account_created",
+      "accountNumber": "NBMR8WM4WFHECG3017"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T07:34:03.089Z",
+    "id": "8123961b-f074-4485-a9c2-603a1e791bb8",
+    "createdAt": "2026-07-06T07:34:03.089Z",
+    "updatedAt": "2026-07-06T07:34:03.089Z"
+  },
+  {
+    "actorId": "2546745b-2047-4fb2-9928-3598f2529fb9",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "d6b9ec86-ddaf-475b-8546-c7a29fe1a5b9",
+    "details": {
+      "type": "deposit",
+      "amount": 10000
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T07:34:07.962Z",
+    "id": "81ea0f3f-f73c-4a57-98a8-a644fc7cae08",
+    "createdAt": "2026-07-06T07:34:07.962Z",
+    "updatedAt": "2026-07-06T07:34:07.962Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "registration",
+    "resource": "User",
+    "resourceId": "5f218916-c421-4611-8ab3-60b646a00a8a",
+    "details": {
+      "type": "account_created_on_register",
+      "accountNumber": "NBMR8ZBOEO1S0H2805"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T08:49:54.001Z",
+    "id": "6b32b1cd-fbd4-47b9-a54c-3d5e7477e725",
+    "createdAt": "2026-07-06T08:49:54.001Z",
+    "updatedAt": "2026-07-06T08:49:54.001Z"
+  },
+  {
+    "actorId": "5f218916-c421-4611-8ab3-60b646a00a8a",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "72850c59-4976-49fa-8ddb-d3a3ccf43f91",
+    "details": {
+      "type": "deposit",
+      "amount": 1234
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T09:40:01.902Z",
+    "id": "253e544d-3cea-4d61-bd5e-29002956da10",
+    "createdAt": "2026-07-06T09:40:01.902Z",
+    "updatedAt": "2026-07-06T09:40:01.902Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T09:46:23.615Z",
+    "id": "b062eab1-4669-45c6-82cf-378b230f949e",
+    "createdAt": "2026-07-06T09:46:23.616Z",
+    "updatedAt": "2026-07-06T09:46:23.616Z"
+  },
+  {
+    "actorId": "u-user",
+    "actorType": "user",
+    "action": "admin_action",
+    "resource": "Card",
+    "resourceId": "27291397-219a-4021-82ca-1f6a8db4e3ce",
+    "details": {
+      "type": "card_created",
+      "cardType": "debit",
+      "network": "Visa"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T09:46:39.351Z",
+    "id": "de29f31e-65aa-4be3-8939-cf0df71d66ca",
+    "createdAt": "2026-07-06T09:46:39.351Z",
+    "updatedAt": "2026-07-06T09:46:39.351Z"
+  },
+  {
+    "actorId": "u-user",
+    "actorType": "user",
+    "action": "beneficiary_added",
+    "resource": "Beneficiary",
+    "resourceId": "beab4304-0845-4045-bbb6-fff5a14768ce",
+    "details": {
+      "accountNumber": "1234567890",
+      "bankName": "HDFC Bank"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "medium",
+    "timestamp": "2026-07-06T09:46:48.148Z",
+    "id": "7afd4f18-db17-485d-a967-cf9604cd03c6",
+    "createdAt": "2026-07-06T09:46:48.148Z",
+    "updatedAt": "2026-07-06T09:46:48.148Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T09:50:24.788Z",
+    "id": "0fd4a06e-f245-485b-bdb1-b7ef20569515",
+    "createdAt": "2026-07-06T09:50:24.789Z",
+    "updatedAt": "2026-07-06T09:50:24.789Z"
+  },
+  {
+    "actorId": "5f218916-c421-4611-8ab3-60b646a00a8a",
+    "actorType": "user",
+    "action": "beneficiary_added",
+    "resource": "Beneficiary",
+    "resourceId": "41bbadcd-f667-47f6-b244-1ccc4faad274",
+    "details": {
+      "accountNumber": "741058963",
+      "bankName": "AQW"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "medium",
+    "timestamp": "2026-07-06T09:52:55.666Z",
+    "id": "47e2b135-50fd-498c-b4e9-4997edab862c",
+    "createdAt": "2026-07-06T09:52:55.666Z",
+    "updatedAt": "2026-07-06T09:52:55.666Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:37:11.304Z",
+    "id": "ac89da9c-890a-49bf-9581-d728b8b5688e",
+    "createdAt": "2026-07-06T15:37:11.305Z",
+    "updatedAt": "2026-07-06T15:37:11.305Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:37:22.094Z",
+    "id": "c993a31a-0266-4147-8b5b-b75006205059",
+    "createdAt": "2026-07-06T15:37:22.094Z",
+    "updatedAt": "2026-07-06T15:37:22.094Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:37:33.150Z",
+    "id": "085c45d6-bb36-405b-a40c-478f33730c40",
+    "createdAt": "2026-07-06T15:37:33.150Z",
+    "updatedAt": "2026-07-06T15:37:33.150Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "u-user",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.28000.1619",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:38:02.811Z",
+    "id": "d220b263-7b94-458e-855d-8d447423c8fd",
+    "createdAt": "2026-07-06T15:38:02.811Z",
+    "updatedAt": "2026-07-06T15:38:02.811Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "registration",
+    "resource": "User",
+    "resourceId": "7303d857-1194-41f4-8fd7-4ebca6abb260",
+    "details": {
+      "type": "account_created_on_register",
+      "accountNumber": "NBMR9E18MO2K7N2373"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:41:41.235Z",
+    "id": "7f2bcc3d-07d5-45f6-bea4-21404f5b4ffa",
+    "createdAt": "2026-07-06T15:41:41.235Z",
+    "updatedAt": "2026-07-06T15:41:41.235Z"
+  },
+  {
+    "actorId": "7303d857-1194-41f4-8fd7-4ebca6abb260",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "e43aed0d-b51f-4755-995e-6ba1afb42028",
+    "details": {
+      "type": "deposit",
+      "amount": 740
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:42:03.811Z",
+    "id": "42a79dff-0cc4-4c57-98ae-21e4a28c53fd",
+    "createdAt": "2026-07-06T15:42:03.811Z",
+    "updatedAt": "2026-07-06T15:42:03.811Z"
+  },
+  {
+    "actorId": "7303d857-1194-41f4-8fd7-4ebca6abb260",
+    "actorType": "user",
+    "action": "admin_action",
+    "resource": "Card",
+    "resourceId": "7c6ec279-bf3c-49e8-bdbd-1cda0a2ef666",
+    "details": {
+      "type": "card_created",
+      "cardType": "credit",
+      "network": "Visa"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:42:23.158Z",
+    "id": "ecaeabb0-cb9c-43c2-b421-41d42c8ef527",
+    "createdAt": "2026-07-06T15:42:23.158Z",
+    "updatedAt": "2026-07-06T15:42:23.158Z"
+  },
+  {
+    "actorId": "7303d857-1194-41f4-8fd7-4ebca6abb260",
+    "actorType": "user",
+    "action": "transfer",
+    "resource": "Transaction",
+    "resourceId": "09ba19d9-2abd-4083-a867-69539d6513b9",
+    "details": {
+      "amount": 123,
+      "fromAccount": "e43aed0d-b51f-4755-995e-6ba1afb42028",
+      "toAccount": "1000010003"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "medium",
+    "timestamp": "2026-07-06T15:43:44.832Z",
+    "id": "e024892e-e6f4-479b-8ac6-a6c952da9a9f",
+    "createdAt": "2026-07-06T15:43:44.832Z",
+    "updatedAt": "2026-07-06T15:43:44.832Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "login",
+    "resource": "User",
+    "resourceId": "7303d857-1194-41f4-8fd7-4ebca6abb260",
+    "details": {},
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-06T15:45:20.624Z",
+    "id": "beb8d6b0-28c3-4d92-b01b-863ba8a2e82a",
+    "createdAt": "2026-07-06T15:45:20.624Z",
+    "updatedAt": "2026-07-06T15:45:20.624Z"
+  },
+  {
+    "actorId": "system",
+    "actorType": "system",
+    "action": "registration",
+    "resource": "User",
+    "resourceId": "7ff3cf01-ae56-4e63-ae2a-8e419ee7285c",
+    "details": {
+      "type": "account_created_on_register",
+      "accountNumber": "NBMS94M7KQM02F1750"
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-31T15:57:45.819Z",
+    "id": "5d6b32ea-57cf-4bcb-b5be-54ce5a802f28",
+    "createdAt": "2026-07-31T15:57:45.819Z",
+    "updatedAt": "2026-07-31T15:57:45.819Z"
+  },
+  {
+    "actorId": "7ff3cf01-ae56-4e63-ae2a-8e419ee7285c",
+    "actorType": "user",
+    "action": "deposit",
+    "resource": "Account",
+    "resourceId": "aa1cb779-5d59-4af8-a1f2-fbc22b8347ce",
+    "details": {
+      "type": "deposit",
+      "amount": 123
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "severity": "low",
+    "timestamp": "2026-07-31T16:01:07.729Z",
+    "id": "fa4a3185-2685-4c2c-9f1e-68e5c3bc027d",
+    "createdAt": "2026-07-31T16:01:07.729Z",
+    "updatedAt": "2026-07-31T16:01:07.729Z"
+  }
+]
